@@ -27,7 +27,6 @@ public class DeliveryTest {
     public void shouldRegistrationFormFill() {
         String date = genDate(3);
         $("[data-test-id='city'] input").setValue("Калининград");
-        //$("[data-test-id='date'] input").setValue(date);
         $("[data-test-id='name'] input").setValue(("Валерий Иванов"));
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $("[data-test-id='date'] input").setValue(date);
@@ -148,7 +147,6 @@ public class DeliveryTest {
         $("[data-test-id='city'] input").setValue("Калининград");
         $("[data-test-id='date'] input ").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $("[data-test-id='date'] input ").setValue(date);
-        //$("[data-test-id='name'] input").setValue((""));
         $("[data-test-id='phone'] input").setValue("+79211234567");
         $$("[data-test-id='agreement']").first().click();
         $$("button").find(exactText("Забронировать")).click();
